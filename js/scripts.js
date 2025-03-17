@@ -1,7 +1,7 @@
 /***************************************************************************************************/
-/*         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/js                  */
+/*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/js                  */
 /*                                    VERSAO 11 de Novembro 2024                                   */
-/*                  Este js  é executado automaticamente  pelo /webhookPdS/public/index.php        */
+/*                  Este js  é executado automaticamente  pelo /Alarme_MQTT/public/index.php        */
 /*                  Arquivo de carregar os logs de forma dinamica                                  */
 /****************************************************************************************************/
 
