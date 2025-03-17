@@ -1,0 +1,134 @@
+/****************************************************************************************************
+ *         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/css                  *
+ *                                    VERSAO 13 de Novembro 2024                                    *
+ *                  Este css é executado automaticamente  pelo /webhookPdS/public/index.php         *
+ *                  Arquivo de configuração css dos arquivos HTML e PHP                             *
+ ****************************************************************************************************/
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto como Arial */
+    background-color: #f4f4f9; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+/* Botão voltar */
+#btn-voltar {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-voltar:hover {
+    background-color: #333;
+}
+
+/* Contêiner principal centralizado */
+.container {
+    width: 80%; /* Reduzindo a largura do contêiner */
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 30px auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    box-sizing: border-box;
+    font-size: 12px; /* Ajuste aqui o tamanho da fonte */
+}
+    
+/* Estilo para o cabeçalho principal da página */
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaço entre o título e o restante do conteúdo */
+}
+
+/* Botão de controle do alarme */
+.link-button {
+    background-color: #000; /* Botão preto */
+    color: white; /* Texto branco */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Cabeçalho da tabela movido para fora do contêiner */
+#tableHeader {
+    width: 100%; /* Mesma largura da tabela */
+    overflow: hidden; /* Remove rolagem desnecessária */
+    background-color: #000; /* Fundo preto */
+    border-radius: 5px 5px 0 0; /* Bordas arredondadas na parte superior */
+}
+
+#tableHeader table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaçamento entre as células */
+}
+
+#tableHeader th {
+    color: white; /* Cor do texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 5px; /* Reduz o preenchimento interno */
+    height: auto; /* Deixa a altura ser definida automaticamente pelo conteúdo */
+    line-height: 1.5; /* Controla o espaçamento vertical do texto */
+}
+
+/* Estilo para o contêiner do corpo da tabela */
+.log-container {
+    width: 100%;
+    max-height: 250px; /* Define altura para rolagem */
+    overflow-y: auto; /* Habilita rolagem vertical */
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 0 0 5px 5px; /* Bordas arredondadas na parte inferior */
+    box-sizing: border-box;
+    padding: 20px 10px; /* Aumenta o espaçamento vertical (15px) e mantém o horizontal (10px) */
+    background-color: #f9f9f9; /* Fundo claro */
+}
+
+.log-container table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaçamento entre as células */
+}
+
+
+.log-container td {
+    font-size: 12px; /* Tamanho da fonte */
+    word-wrap: break-word; /* Permite a quebra de palavras longas */
+    overflow-wrap: break-word; /* Compatibilidade com navegadores antigos */
+    white-space: normal; /* Permite múltiplas linhas */
+    padding: 15px 10px; /* Aumenta o espaçamento vertical (15px) e mantém o horizontal (10px) */
+    border-bottom: 1px solid #ddd; /* Linha divisória entre as linhas */
+    text-align: left; /* Alinha o texto à esquerda */
+    line-height: 1.8; /* Aumenta o espaçamento vertical dentro da linha */
+}
+
+/* Estilo para ajustar a tabela em dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajusta a largura para telas médias */
+        padding: 10px;
+        font-size: 12px; /* Fonte para telas médias */
+    }
+
+    #tableHeader th, .log-container td {
+        font-size: 8px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Reduz o espaçamento interno */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px; /* Reduz o espaçamento interno no contêiner */
+        font-size: 10px; /* Fonte para telas pequenas */
+    }
+
+    #tableHeader th, .log-container td {
+        font-size: 10px; /* Fonte ainda menor para telas pequenas */
+        padding: 5px; /* Espaçamento interno reduzido */
+    }
+}

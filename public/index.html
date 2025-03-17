@@ -1,0 +1,142 @@
+<!-- 
+****************************************************************************************************
+*         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/public               *
+*                        VERSAO 11 de Novembro 2024 - 24/02/2025                                   *
+*                  É executado automaticamente  pelo /webhookPdS/public/index.html                 *
+*  Arquivo Principal do Sistema de Monitoramento de Alarme por video analitico,mqtt e webhook      *
+****************************************************************************************************
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Pé de Serra</title>
+    <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials">
+    <!-- Estilos da página -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-container {
+            text-align: center;
+        }
+
+        .header-container img {
+            width: 150px;
+        }
+
+        .header-container h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Layout dos menus em duas colunas */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 0;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            width: 45%;
+            max-width: 250px;
+            transition: transform 0.3s, background-color 0.3s;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+
+        nav a:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        nav img {
+            width: 84.5px;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .back-button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: #000000;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="../img/seguranca.jpg" alt="Segurança">
+        <h1>Sistemas de Segurança</h1>
+        <button class="back-button" onclick="window.history.back();">Voltar</button>
+    </div>
+
+    <!-- Menus organizados em duas colunas -->
+    <nav>
+        <a href="http://10.0.0.141:5000">
+            <img src="../img/frigate.jpg" alt="Frigate">
+            <p>Frigate</p>
+        </a>
+        <a href="status_alarm.html">
+            <img src="../img/logo_ativa.jpg" alt="Status do Alarme">
+            <p>Status do Alarme</p>
+        </a>
+        <a href="http://10.0.0.5/leitor_facial/index.html">
+            <img src="/leitor_facial/imagens/logo_porta.jpg" alt="Leitor Facial">
+            <p>Leitor Facial</p>
+        </a>
+        <a href="indisponivel.html">
+            <img src="../img/horario.jpg" alt="Horario">
+            <p>Programação de Horário</p>
+        </a>
+        <a href="log_viewer.php">
+            <img src="../img/log.jpg" alt="Log Alarme">
+            <p>Log webhook</p>
+        </a>
+    </nav>
+    
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Pé de Serra. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

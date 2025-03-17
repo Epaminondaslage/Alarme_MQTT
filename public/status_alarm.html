@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+****************************************************************************************************
+*         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/public               *
+*                                    VERSAO 13 de Novembro 2024                                    *
+*                  É executado automaticamente  pelo /webhookPdS/public/index.html                 *
+*                                 Arquivo: status_alarm.html                                       *
+****************************************************************************************************
+-->
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Controle de Alarme</title>
+</head>
+<body>
+    <div class="container">
+        <header style="text-align: center; padding: 10px;">
+            <img src="../img/logo_ativa.jpg" alt="Status do Alarme" style="max-width: 30%; height: auto;">
+        </header>
+        <h1>Controle de Alarme</h1>
+        <button id="toggleAlarm" class="link-button" style="background-color: red;">Alarme Desligado</button>
+        <button id="btn-voltar" onclick="history.back()">Voltar</button>
+        <h2>Log de Eventos</h2>
+        <!-- Cabeçalho da tabela movido para fora do container -->
+        <div id="tableHeader">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <!-- Container com o corpo da tabela -->
+        <div id="logContainer" class="log-container">
+            <table>
+                <tbody id="logTable"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="footer" style="position: fixed; bottom: 0; width: 100%; background-color: #f4f4f9; padding: 10px; text-align: center;">
+        Aguardando ações...
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/script_status_alarm.js"></script> 
+</body>
+</html>

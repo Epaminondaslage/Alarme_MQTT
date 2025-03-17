@@ -1,0 +1,99 @@
+  
+ 
+2024-11-12 17:55:05 - Status: Alarme_Ligado
+2024-11-12 17:55:07 - Status: Alarme_Desligado
+2024-11-12 17:55:09 - Status: Alarme_Ligado
+2024-11-12 17:55:18 - Status: Alarme_Desligado
+2024-11-12 17:55:25 - Status: Alarme_Ligado
+2024-11-12 17:55:28 - Status: Alarme_Desligado
+2024-11-12 17:56:22 - Status: Alarme_Ligado
+2024-11-12 18:12:32 - Status: Alarme_Ligado
+2024-11-12 18:13:55 - Status: Alarme_Ligado
+2024-11-12 18:14:10 - Status: Alarme_Ligado
+2024-11-12 19:21:43 - Status: Alarme_Ligado
+2024-11-12 19:21:44 - Status: Alarme_Ligado
+2024-11-12 19:21:45 - Status: Alarme_Ligado
+2024-11-12 19:21:46 - Status: Alarme_Ligado
+2024-11-12 19:42:23 - Status: Alarme_Ligado
+2024-11-12 19:42:27 - Status: Alarme_Ligado
+2024-11-12 19:42:27 - Status: Alarme_Ligado
+2024-11-12 19:42:30 - Status: Alarme_Desligado
+2024-11-12 19:42:38 - Status: Alarme_Ligado
+2024-11-12 19:43:14 - Status: Alarme_Ligado
+2024-11-12 19:50:05 - Status: Alarme_Ligado
+2024-11-12 19:50:16 - Status: Alarme_Desligado
+2024-11-12 19:50:34 - Status: Alarme_Ligado
+2024-11-12 19:51:45 - Status: Alarme_Ligado
+2024-11-12 19:52:44 - Status: Alarme_Ligado
+2024-11-12 19:53:12 - Status: Alarme_Desligado
+2024-11-12 19:53:35 - Status: Alarme_Ligado
+2024-11-12 19:59:16 - Status: Alarme_Ligado
+2024-11-12 19:59:51 - Status: Alarme_Ligado
+2024-11-12 21:41:48 - Status: Alarme_Ligado
+2024-11-12 21:41:58 - Status: Alarme_Desligado
+2024-11-12 21:46:44 - Status: Alarme_Ligado
+2024-11-12 21:54:24 - Status: Alarme_Ligado
+2024-11-12 21:54:36 - Status: Alarme_Desligado
+2024-11-12 21:54:46 - Status: Alarme_Ligado
+2024-11-12 22:16:18 - Status: Alarme_Ligado
+2024-11-12 22:16:29 - Status: Alarme_Desligado
+2024-11-12 22:16:40 - Status: Alarme_Ligado
+2024-11-13 05:49:36 - Status: Alarme_Ligado
+2024-11-13 05:49:59 - Status: Alarme_Desligado
+2024-11-13 05:50:34 - Status: Alarme_Ligado
+2024-11-14 05:21:03 - Status: Alarme_Ligado
+2024-11-14 08:35:58 - Status: Alarme_Desligado
+2024-11-14 11:57:11 - Status: Alarme_Ligado
+2024-11-14 11:57:11 - Status: Alarme_Ligado
+2024-11-14 12:37:12 - Status: Alarme_Ligado
+2024-11-14 12:37:24 - Status: Alarme_Desligado
+2024-11-14 12:37:50 - Status: Alarme_Ligado
+2024-11-14 16:54:16 - Status: Alarme_Ligado
+2024-11-14 16:54:24 - Status: Alarme_Desligado
+2024-11-14 16:54:26 - Status: Alarme_Desligado
+2024-11-14 16:54:33 - Status: Alarme_Ligado
+2024-11-14 17:02:01 - Status: Alarme_Ligado
+2024-11-14 17:02:15 - Status: Alarme_Desligado
+2024-11-14 17:04:05 - Status: Alarme_Ligado
+2024-11-14 17:04:24 - Status: Alarme_Desligado
+2024-11-14 17:28:11 - Status: Alarme_Ligado
+2024-11-14 17:28:22 - Status: Alarme_Desligado
+2024-11-14 17:28:35 - Status: Alarme_Ligado
+2024-11-14 17:45:51 - Status: Alarme_Ligado
+2024-11-14 17:46:46 - Status: Alarme_Desligado
+2024-11-14 17:46:59 - Status: Alarme_Ligado
+2024-11-14 17:48:37 - Status: Alarme_Ligado
+2024-11-18 16:28:06 - Status: Alarme_Ligado
+2024-11-19 13:06:12 - Status: Alarme_Ligado
+2024-11-19 13:34:52 - Status: Alarme_Ligado
+2024-11-19 13:36:13 - Status: Alarme_Ligado
+2024-11-19 13:37:11 - Status: Alarme_Desligado
+2024-11-19 13:37:16 - Status: Alarme_Ligado
+2024-11-19 13:37:25 - Status: Alarme_Desligado
+2024-11-19 13:38:03 - Status: Alarme_Ligado
+2024-11-19 13:51:00 - Status do alarme alterado para: 1
+2024-11-19 13:52:31 - Status do alarme alterado para: 1
+2024-11-19 13:53:35 - Status do alarme alterado para: 0
+2024-11-19 13:53:42 - Status do alarme alterado para: 1
+2024-11-19 13:54:46 - Status do alarme alterado para: 0
+2024-11-19 13:54:51 - Status do alarme alterado para: 1
+2024-11-19 13:54:59 - Status do alarme alterado para: 0
+2024-11-19 13:55:02 - Status do alarme alterado para: 1
+2024-11-19 13:55:43 - Status do alarme alterado para: 0
+2024-11-19 13:55:49 - Status do alarme alterado para: 1
+2024-11-19 13:57:15 - Status do alarme alterado para: 0
+2024-11-19 13:57:17 - Status do alarme alterado para: 1
+2024-11-19 13:57:18 - Status do alarme alterado para: 0
+2024-11-19 13:57:20 - Status do alarme alterado para: 1
+2024-11-19 14:00:50 - Status do alarme alterado para: 0
+2024-11-19 14:02:14 - Status do alarme alterado para: 1
+2024-11-19 14:02:24 - Status do alarme alterado para: 0
+2024-11-19 14:05:50 - Status do alarme alterado para: Alarme Ligado
+2024-11-19 14:05:56 - Status do alarme alterado para: Alarme Desligado
+2024-11-19 14:06:01 - Status do alarme alterado para: Alarme Ligado
+2024-11-19 14:06:45 - Status do alarme alterado para: Alarme Desligado
+2024-11-19 14:06:53 - Status do alarme alterado para: Alarme Ligado
+2024-11-19 14:07:15 - Status do alarme alterado para: Alarme Desligado
+2024-11-19 14:07:16 - Status do alarme alterado para: Alarme Ligado
+2024-11-19 14:07:17 - Status do alarme alterado para: Alarme Desligado
+2024-11-19 14:07:19 - Status do alarme alterado para: Alarme Ligado
