@@ -2,7 +2,7 @@
 
 ## Arquitetura do Sistema
 
-<img src="/img/topologia.png" width="40%" />
+<img src="/img/topologia.jpg" width="50%" />
 
 ## Soluções empregadas
  
