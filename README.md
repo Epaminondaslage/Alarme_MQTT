@@ -6,13 +6,13 @@
 
 ## Soluções empregadas
  
-* Usa o Home Assistant
-* MQTT do Home Assistant
+* Home Assistant - 10.0.0.141
+* MQTT do Home Assistant mqtt://10.0.0.141:1883
 * Acionamentos por KC868-A16/F024F9F4F430  Iluminação 10.0.0.205
 * Acionamentos por KC868_A16/3C8A1FA671F4  Garagem    10.0.0.206
 * Acionamentos por KC868_A16/F024F95B0D6C  Irrigação  10.0.0.207
-* Acionamentos por Double Take Home Assistant
-* Acionamento e controle pelo NodeRED do Home Assistat
+* Acionamentos por frigate e Double Take Home Assistant http://10.0.0.141/5000
+* Acionamento e controle pelo NodeRED do Home Assistat [10.0.0.141](http://10.0.0.141:8123/a0d7b954_nodered/ingress)
 
 ## Estrurura do Projeto
 
