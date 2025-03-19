@@ -2,8 +2,8 @@
 //****************************************************************************************************
 //*         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/public               *
 //*                                    VERSAO 13 de Novembro 2024                                    *
-//*                  É executado automaticamente  pelo /webhookPdS/public/alarm_status.html          *
-//*                                 Arquivo: et_log.php                                              *
+//*                  É executado automaticamente  pelo /Alarme_MQTT/public/alarm_status.html          *
+//*                                 Arquivo: get_log_alarm.php                                              *
 //* Este arquivo lê o conteúdo do log de eventos de alarme mqtt_log.txt  e o retorna em formato JSON * 
 //****************************************************************************************************
 

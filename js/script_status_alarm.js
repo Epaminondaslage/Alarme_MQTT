@@ -1,9 +1,10 @@
 /****************************************************************************************************/
-/*         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/js                   */
+/*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/js                   */
 /*                                    VERSAO 14 de Novembro 2024                                    */
-/*          Este js  é executado automaticamente  pelo /webhookPdS/public/status_alarm.html         */
+/*          Este js  é executado automaticamente  pelo /Alarme_MQTT/public/status_alarm.html         */
 /*         Arquivo de obter o status do alarme ao carregar a página atualizar log e outras coisas   */
 /****************************************************************************************************/
+
 $(document).ready(function() {
     // Requisição inicial para obter o status do alarme ao carregar a página
     $.get("toggle_alarm.php", function(data) {
@@ -42,7 +43,7 @@ $(document).ready(function() {
                 updateFooter("Erro ao processar resposta do servidor.");
             }
         }).fail(function(xhr) {
-            // Em caso de falha na requisição, exibe uma mensagem de erro
+        // Em caso de falha na requisição, exibe uma mensagem de erro
             alert("Erro ao executar ação: " + xhr.responseText);
             updateFooter("Erro ao executar ação");
         });
