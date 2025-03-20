@@ -7,7 +7,15 @@
 //* Este arquivo lê o conteúdo do log de eventos de alarme mqtt_log.txt  e o retorna em formato JSON * 
 //****************************************************************************************************
 
+$status = 0;
+
+$statusFile = '../logs/status.txt'; // Arquivo onde o status do alarme é salvo
+
+$currentStatus = file_exists($statusFile) ? trim(file_get_contents($statusFile)) : "0";
+
+
 $logFile = '../logs/mqtt_log.txt';
+$logs = [];
 
 if (file_exists($logFile)) {
     $logData = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -23,8 +31,12 @@ if (file_exists($logFile)) {
         ];
     }
 
-    echo json_encode($response);
-} else {
-    echo json_encode([]);
+    $logs = $response;
 }
+
+
+echo json_encode(array(
+    'currentStatus' => $currentStatus,
+    'logs' => $logs
+));
 ?>

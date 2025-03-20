@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Status MQTT em Tempo Real</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        table { width: 50%; border-collapse: collapse; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #333; color: #fff; }
+    </style>
+</head>
+<body>
+    <h2>Status MQTT em Tempo Real</h2>
+    <table id="statusTable">
+        <thead>
+            <tr>
+                <th>Parâmetro</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        function atualizarDados() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.querySelector('#statusTable tbody');
+                    tbody.innerHTML = '';
+
+                    Object.entries(data).forEach(([key, val]) => {
+                        if (typeof val === 'object') {
+                            Object.entries(val).forEach(([subKey, subVal]) => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `<td>${key}.${subKey}</td><td>${subVal}</td>`;
+                                tbody.appendChild(row);
+                            });
+                        } else {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `<td>${key}</td><td>${val}</td>`;
+                            tbody.appendChild(row);
+                        }
+                    });
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+
+        // Atualiza automaticamente a cada 2 segundos
+        setInterval(atualizarDados, 2000);
+        atualizarDados();
+    </script>
+</body>
+</html>

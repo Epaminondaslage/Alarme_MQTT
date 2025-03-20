@@ -6,22 +6,6 @@
 /****************************************************************************************************/
 
 $(document).ready(function() {
-    // Requisição inicial para obter o status do alarme ao carregar a página
-    $.get("toggle_alarm.php", function(data) {
-        try {
-            var response = JSON.parse(data);
-            if (response.status === 'success') {
-                updateButtonState(response.currentStatus == 1 ? 'Alarme_Ligado' : 'Alarme_Desligado');
-            } else {
-                updateFooter("Erro: " + response.message);
-            }
-        } catch (e) {
-            updateFooter("Erro ao processar resposta do servidor.");
-        }
-    }).fail(function(xhr) {
-        updateFooter("Erro ao obter o status inicial: " + xhr.responseText);
-    });
-
     // Ao clicar no botão de alternância do alarme
     $('#toggleAlarm').click(function() {
         var alarmStatus = $(this).text() === 'Alarme Ligado' ? 'Alarme_Desligado' : 'Alarme_Ligado';
@@ -54,24 +38,26 @@ $(document).ready(function() {
         $('#footer').text(message);
     }
 
-    // Função para atualizar o estado do botão
+        // Função para atualizar o estado do botão
     function updateButtonState(status) {
-    let button = document.getElementById("toggleAlarm");
+        let button = document.getElementById("toggleAlarm");
 
-    if (status === "Alarme_Ligado") {
-        button.style.backgroundColor = "green";
-        button.textContent = "Alarme Ligado";
-    } else {
-        button.style.backgroundColor = "red";
-        button.textContent = "Alarme Desligado";
-    } 
-}
+        if (status === "Alarme_Ligado") {
+            button.style.backgroundColor = "green";
+            button.textContent = "Alarme Ligado";
+        } else {
+            button.style.backgroundColor = "red";
+            button.textContent = "Alarme Desligado";
+        } 
+    }
 
     // Função para atualizar o log de eventos periodicamente
     function updateLog() {
         $.get("get_log_alarm.php", function(data) {
             try {
-                var logEntries = JSON.parse(data).reverse();
+                var response = JSON.parse(data);
+                updateButtonState(response.currentStatus == 1 ? 'Alarme_Ligado' : 'Alarme_Desligado');
+                var logEntries = response.logs.reverse();
                 var logHtml = '';
 
                 // Cria as linhas da tabela de log com os dados recebidos
