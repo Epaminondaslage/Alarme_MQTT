@@ -14,35 +14,44 @@
 * Acionamentos por frigate e Double Take Home Assistant http://10.0.0.141/5000
 * Acionamento e controle pelo NodeRED do Home Assistat [10.0.0.141](http://10.0.0.141:8123/a0d7b954_nodered/ingress)
 
-## Estrurura do Projeto
+## Estrutura do Projeto
 
 ```
 /var/www/html/Alarme_MQTT/
-├── public/                      
-│   ├── index.php                # Página inicial ou ponto de entrada (opcional)
-│   └── log_viewer.php           # Página HTML para visualizar os logs
-│  
 │
-├── css/
-│   └── styles.css               # CSS para estilos e responsividade
-│
-├── js/
-│   └── scripts.js               # JavaScript para atualização dinâmica dos logs
-│
-├── src/                         
-│   ├── MqttClient.php           # Classe para gerenciar a conexão e publicação MQTT
-│
+├── public/                      # Diretório público acessível via web
+│   ├── index.html                # Página principal do sistema
+│   ├── status_alarm.html         # Página de status do alarme
+│   ├── indisponivel.html         # Página de funcionalidades em construção
+│   ├── toggle_alarm.php          # Script para alternar estado do alarme via MQTT
+│   ├── get_log_alarm.php         # Script para buscar o log de eventos do alarme
+│   ├── mqtt.php                  # Script para comunicação MQTT
+├── img/                       # Diretório para imagens
+│   ├── logo_ativa.jpg          # Logotipo do sistema
+│   ├── seguranca.jpg           # Imagem para segurança
+│   ├── frigate.jpg             # Imagem para link do Frigate
+│   ├── horario.jpg             # Ícone de programação de horário
+│   ├── construcao.jpg          # Ícone de página em construção
+├── css/                       # Diretório para estilos CSS
+│   ├── styles.css             # Estilização da interface do sistema
+├── js/                        # Diretório para scripts JavaScript
+│   ├── script_status_alarm.js # Script para manipular o status do alarme
+│   ├── scripts.js
+│   ├── jquery.js
 ├── config/                      
 │   └── config.php               # Configurações gerais do projeto (MQTT, etc.)
-│
 │
 ├── scripts/
 │   └── monitor_connections.sh   # Script para verificar e manter ativa a conexão MQTT
 │
-├── vendor/                      # Diretório para dependências externas (composer)
+├── logs/                      # Diretorio para log e status de atuação do alarme
+│   └── mqtt_log.txt           # Arquivo co data e hora de atic=vação e desativação do alarme
+│   └── status.txt             # arquico o para alarme desativado e 1 para ativado
+├── vendor/                    # Diretório para dependências externas (composer)
 │
-└── README.md                    # Documentação do projeto
-
+├── manifest.webmanifest       # Arquivo para PWA (Progressive Web App)
+│
+└── README.md                  # Documento explicativo do projeto no Github
 ```
 
 ### Diretorio config (config/config.php)
