@@ -48,14 +48,14 @@ h1 {
 
 /* Botão de controle do alarme */
 .link-button {
-    background-color: #000; /* Botão preto */
-    color: white; /* Texto branco */
+    background-color: #000; 
+    color: white; 
     padding: 10px 20px;
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 5px; 
     text-decoration: none;
     font-size: 16px;
-    margin: 10px;
-}
+    margin: 10px;  
+}  
 
 /* Cabeçalho da tabela movido para fora do contêiner */
 #tableHeader {
@@ -132,3 +132,5 @@ h1 {
         padding: 5px; /* Espaçamento interno reduzido */
     }
 }
+
+

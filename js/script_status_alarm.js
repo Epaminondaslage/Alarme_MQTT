@@ -64,7 +64,7 @@ $(document).ready(function() {
     } else {
         button.style.backgroundColor = "red";
         button.textContent = "Alarme Desligado";
-    }
+    } 
 }
 
     // Função para atualizar o log de eventos periodicamente
