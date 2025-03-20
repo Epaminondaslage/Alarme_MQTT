@@ -55,13 +55,17 @@ $(document).ready(function() {
     }
 
     // Função para atualizar o estado do botão
-    function updateButtonState(alarmStatus) {
-        if (alarmStatus === 'Alarme_Ligado') {
-            $('#toggleAlarm').text('Alarme Ligado').css('background-color', 'green');
-        } else {
-            $('#toggleAlarm').text('Alarme Desligado').css('background-color', 'red');
-        }
+    function updateButtonState(status) {
+    let button = document.getElementById("toggleAlarm");
+
+    if (status === "Alarme_Ligado") {
+        button.style.backgroundColor = "green";
+        button.textContent = "Alarme Ligado";
+    } else {
+        button.style.backgroundColor = "red";
+        button.textContent = "Alarme Desligado";
     }
+}
 
     // Função para atualizar o log de eventos periodicamente
     function updateLog() {
