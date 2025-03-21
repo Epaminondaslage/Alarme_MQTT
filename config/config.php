@@ -1,8 +1,8 @@
 <?php
 //***************************************************************************************************
-//         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS              
-//                                    VERSAO 11 de Novembro 2024                                              
-//                  Este PHP é executado automaticamente  pelo /webhookPdS/public/index.php                    
+//         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT              
+//                       VERSAO 11 de Novembro 2024 / março 2025                                             
+//             Este PHP é executado automaticamente  pelo /Alarme_MQTT /public/index.php                    
 //                  Arquivo de configuração com as credenciais de conexão MQTT
 //***************************************************************************************************
 

@@ -1,8 +1,8 @@
 <?php
 //***************************************************************************************************
-//         Este arquivo deve ser copiado no diretorio /var/www/html/webhookPdS/src                  *
+//         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/src                 *
 //                                    VERSAO 11 de Novembro 2024                                    *
-//                  Este PHP é executado automaticamente  pelo /webhookPdS/public/index.php         *
+//                  Este PHP é executado automaticamente  pelo /Alarme_MQTT/public/index.php        *
 //                Arquivo que  Inclui o autoloader do Composer                                      *
 //***************************************************************************************************
 

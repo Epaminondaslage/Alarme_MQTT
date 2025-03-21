@@ -2,9 +2,10 @@
 
 //****************************************************************************************************
 //*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/public               *
-//*                                    VERSAO 11 de Novembro 2024                                    *
+//*                                    VERSAO 13 marco de 2025                                        *
 //*                  Este HTML é executado automaticamente  pelo /Alarme_MQTT/public/index.php        *
-//*                     Arquivo de visualização de log  do sistema de Alarme               *
+//*                     Arquivo de exemplo de acesso ao servidor de MQTT do sitio                     *
+//*                       não é utilizado  pelo sitema de Alarme                                      *
 //****************************************************************************************************
 
 error_reporting(E_ALL);

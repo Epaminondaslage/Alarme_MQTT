@@ -1,9 +1,9 @@
-/****************************************************************************************************/
+/*****************************************************************************************************/
 /*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/js                   */
-/*                                    VERSAO 14 de Novembro 2024                                    */
+/*                                    VERSAO 14 de Novembro 2024  update Marco 2025                  */
 /*          Este js  é executado automaticamente  pelo /Alarme_MQTT/public/status_alarm.html         */
-/*         Arquivo de obter o status do alarme ao carregar a página atualizar log e outras coisas   */
-/****************************************************************************************************/
+/*         Arquivo de obter o status do alarme ao carregar a página atualizar log e outras coisas    */
+/*****************************************************************************************************/
 
 $(document).ready(function() {
     // Ao clicar no botão de alternância do alarme

@@ -1,8 +1,8 @@
 <?php
 //****************************************************************************************************
-//*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/public               *
-//*                                    VERSAO 13 de Novembro 2024                                    *
-//*                  É executado automaticamente  pelo /Alarme_MQTT/public/alarm_status.html          *
+//*         Este arquivo deve ser copiado no diretorio /var/www/html/Alarme_MQTT/public              *
+//*                                    VERSAO 13 de Novembro 2024   update marco de 2025             *
+//*                  É executado automaticamente  pelo /Alarme_MQTT/public/alarm_status.html         *
 //*                                 Arquivo: toggle_alarm.php                                        *
 //*   Este arquivo lida com a publicacao do estado do alarme no broker MQTT e a criacao do log       * 
 //****************************************************************************************************
